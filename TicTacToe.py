@@ -3,10 +3,10 @@ from random import randint
 
 def check_indx(val):
     if type(val) not in (tuple, list) or len(val) != 2:
-        raise IndexError('некорректно указанные индексы')
+        raise IndexError('incorrect index')
     r, c = val
     if 2 < r < 0 or 2 < c < 0:
-        raise IndexError('некорректно указанные индексы')
+        raise IndexError('incorrect index')
 
 
 class Cell:
